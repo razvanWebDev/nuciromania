@@ -63,6 +63,7 @@
             </li>
             <li class="nav-item sidebar-page-header" id="users-page-header">
               <a href="#" class="nav-link sidebar-page-title">
+              <i class="nav-icon fas fa-user"></i>
                 <p>
                   Users
                   <i class="right fas fa-angle-left"></i>
