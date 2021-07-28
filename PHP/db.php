@@ -3,7 +3,12 @@
   $server = 'localhost';
   $username = 'root';
   $password = '';
-  $dbname = 'new_template';    
+  $dbname = 'nuciromania';    
+
+  // $server = 'server-0347.whmpanels.com';
+  // $username = 'r91093nuci_flavian';
+  // $password = ']8[cZsUFY5)&';
+  // $dbname = 'r91093nuci_nuciromania';  
 
   $connection = mysqli_connect($server, $username, $password, $dbname);
 

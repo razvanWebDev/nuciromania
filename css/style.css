@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 :root {
-  --main-color: #176083;
-  --main-color-transparent: rgba(23, 96, 131, 0.95);
-  --secondary-color: #6791a5;
-  --secondary-color-transparent: #146082;
-  --white-color: #ffffff;
+  --main-color: #70e000;
+  --main-color-transparent: rgba(112, 224, 0, 0.8);
+  --secondary-color: #ba5624;
+  --secondary-color-transparent: rgba(186, 86, 36, 0.9);
+  --white-color: #fffafb;
 
-  --modal-bg-color: rgba(0, 0, 0, 0.85);
-  --modal-grey-color: #acacac;
-
-  --main-text-color: rgb(32, 32, 32);
+  --main-text-color: #230c0f;
   --light-text-color: #666666;
-  --link-color: #176083;
-  --link-hover-color: rgb(32, 32, 32);
+  --link-color: var(--secondary-color);
+  --link-hover-color: var(--main-color);
 
   --danger-color: #ec312b;
 
@@ -33,6 +31,22 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+body::after {
+  content: "";
+  background: url(../img/section_bg.jpg) no-repeat center/cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .smootth-scroll {
@@ -64,8 +78,8 @@ ul {
 
 button {
   border: 1px solid var(--main-color);
-  color: var(--main-color);
-  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--secondary-color);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 0.5em 1em;
   cursor: pointer;
 }
@@ -90,7 +104,7 @@ button:hover {
   transform: translateY(0);
   line-height: 1.5rem;
   font-size: 0.8em;
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 input,
@@ -213,9 +227,10 @@ header.hideNav {
 }
 
 #logo-section h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 500;
   line-height: 1;
+  font-family: "Fredericka the Great", cursive;
 }
 
 .nav-links {
@@ -411,27 +426,32 @@ footer a:visited {
   display: flex;
   justify-content: center;
 }
+.hero-btns a:hover {
+  opacity: 1;
+}
 .hero-btns button {
   margin: 1em;
   color: var(--white-color);
   border: 1px solid var(--white-color);
   font-size: 1.2em;
+  min-width: 12em;
 }
 .hero-btns button.call-to-action {
   background-color: var(--white-color);
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 .hero-btns button.call-to-action:hover {
   color: var(--white-color);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-#about-us p {
+.description p {
   text-align: center;
   line-height: 1.8;
   margin-bottom: 1em;
 }
 
+/* =====Contact Page======= */
 .contact-container {
   display: flex;
   width: 100%;
@@ -449,6 +469,8 @@ footer a:visited {
 .contact-container .contact-logo-img {
   width: 100%;
   margin-bottom: 2em;
+  max-height: 12em;
+  object-fit: contain;
 }
 .contact-container .contact-logo img.contact-icon {
   width: 1.8em;
@@ -464,6 +486,9 @@ footer a:visited {
 }
 .contact-container form {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .form-line {
   display: flex;
@@ -522,6 +547,12 @@ footer a:visited {
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    height: 8em;
+  }
+  body {
+    /* header-height */
+    margin-top: 8em;
+    min-height: calc(100vh - 8em);
   }
 
   header hr {
@@ -550,7 +581,7 @@ footer a:visited {
     justify-content: center;
     align-items: center;
     padding: 10vh 0;
-    background-color: var(--main-color-transparent);
+    background-color: var(--secondary-color-transparent);
     color: var(--white-color);
   }
 
@@ -562,6 +593,9 @@ footer a:visited {
     margin-bottom: 2em;
     font-weight: 300;
     text-align: center;
+  }
+  header .nav-links li a {
+    color: var(--white-color);
   }
 
   .hero {
