@@ -1,7 +1,8 @@
 <?php include "PHP/header.php"; ?>
-<?php include "PHP/nav.php"; ?>
+
 
 <section class="hero">
+<?php include "PHP/nav.php"; ?>
     <div class="hero-btns">
         <a href="colectare-nuci"><button class="call-to-action">Colectare</button></a>
         <a href="contact"><button>Contact</button></a>
