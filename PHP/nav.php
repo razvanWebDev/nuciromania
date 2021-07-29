@@ -8,8 +8,8 @@
         <ul class="nav-links">
             <li><a href="/">Acasa</a></li>
             <li><a href="misiune">Misiune</a></li>
-            <!-- <li><a href="sprijin-producatori">Sprijin Producatori</a></li>
-            <li><a href="colectare-nuci">Colectare Nuci</a></li> -->
+            <li><a href="sprijin-producatori">Sprijin Producatori</a></li>
+            <li><a href="colectare-nuci">Colectare Nuci</a></li>
             <li><a href="contact">Contact</a></li>
         </ul>
     </nav>

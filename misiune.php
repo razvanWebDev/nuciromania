@@ -4,9 +4,9 @@
 <section class="description">
     <h2 class="section-title">Misiune</h2>
     <p>
-        Misiunea noastră presupune o abordare de lungă durată, axată în principal pe cooperări și parteneriate cu
-        producători din întreaga țară, care pot produce anual cantități de nucă în coajă cuprinse între 200-300 de
-        kilograme și 4-5 tone.
+        Misiunea noastră presupune o abordare de lungă durată, axată în principal pe <b>cooperări și parteneriate cu
+        producători din întreaga țară</b>, care pot produce anual cantități de nucă în coajă cuprinse <b>între 200-300 de
+        kilograme și 4-5 tone</b>.
     </p>
     <p>
         Ne dorim să susținem producătorii de nucă, indiferent de dimensiune sau suprafața cultivată, persoane care la

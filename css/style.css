@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 :root {
-  --main-color: #70e000;
+  --main-color: #538d22;
   --main-color-transparent: rgba(112, 224, 0, 0.8);
   --secondary-color: #ba5624;
   --secondary-color-transparent: rgba(186, 86, 36, 0.9);
@@ -30,7 +30,7 @@ body {
   color: var(--main-text-color);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -72,10 +72,6 @@ a:hover {
   opacity: 0.6;
 }
 
-ul {
-  padding-left: 5em;
-}
-
 button {
   border: 1px solid var(--main-color);
   color: var(--secondary-color);
@@ -86,6 +82,23 @@ button {
 button:hover {
   opacity: 0.8;
   transition: all 0.2s ease-in-out;
+}
+
+.button {
+  border: 1px solid var(--secondary-color);
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  padding: 0.5em 1em;
+  cursor: pointer;
+  width: fit-content;
+}
+.button:hover {
+  color: var(--white-color);
+  opacity: 0.8;
+}
+
+ul {
+  padding-left: 5em;
 }
 
 /* floating labels */
@@ -151,13 +164,15 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .section-title {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 400;
   margin-bottom: 2em;
+  width: 100%;
+  text-align: center;
 }
 
 ::placeholder {
@@ -449,6 +464,18 @@ footer a:visited {
   text-align: center;
   line-height: 1.8;
   margin-bottom: 1em;
+}
+
+.text-icon {
+  width: 2.5em;
+  margin: 0 1em;
+  transform: translateY(35%);
+}
+
+/* =================collect page========== */
+.contact-us-btn {
+  display: block;
+  margin: 3em auto 0;
 }
 
 /* =====Contact Page======= */
