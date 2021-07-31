@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 :root {
   --main-color: #538d22;
-  --main-color-transparent: rgba(112, 224, 0, 0.8);
+  --main-color-transparent: rgba(83, 141, 34, 0.9);
   --secondary-color: #ba5624;
   --secondary-color-transparent: rgba(186, 86, 36, 0.9);
   --white-color: #fffafb;
@@ -283,7 +283,7 @@ header .nav-links li:last-child {
   height: 0.3em;
   margin: 0.4em;
   transition: all 0.7s ease;
-  background-color: var(--main-color);
+  background-color: var(--white-color);
 }
 
 #hamburger.toggle-burger .line1 {
@@ -586,7 +586,14 @@ footer a:visited {
 /* ################################## RESPONSIVE ########################## */
 
 @media screen and (max-width: 1024px) {
-  header {
+  body {
+    /* header-height */
+    margin-top: 8em;
+    min-height: calc(100vh - 8em);
+  }
+
+  header,
+  .hero header {
     position: fixed;
     left: 0;
     top: 0;
@@ -597,11 +604,14 @@ footer a:visited {
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
     height: 8em;
+    background-color: var(--main-color-transparent);
   }
-  body {
-    /* header-height */
-    margin-top: 8em;
-    min-height: calc(100vh - 8em);
+  .hero header {
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  #logo-section h1 {
+    color: var(--white-color);
   }
 
   header hr {
@@ -627,7 +637,7 @@ footer a:visited {
     width: 70%;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 10vh 0;
     background-color: var(--secondary-color-transparent);
