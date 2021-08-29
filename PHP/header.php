@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>Nuci Romania</title>
+    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo $site_key ?>"></script>
 </head>
 
 <body>
