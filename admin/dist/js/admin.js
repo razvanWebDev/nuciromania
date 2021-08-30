@@ -182,6 +182,43 @@ window.onload = () => {
     });
   });
 
+  //reset password form validation
+  $(function () {
+    $("#reset-password-form").validate({
+      rules: {
+        pwd: {
+          required: true,
+          minlength: 8,
+        },
+        pwd_repeat: {
+          required: true,
+          equalTo: "#pwd",
+        },
+      },
+      messages: {
+        pwd: {
+          required: "Please provide a password",
+          minlength: "Your password must be at least 8 characters long",
+        },
+        pwd_repeat: {
+          required: "Please enter the same a password",
+          equalTo: "Your password must be the same",
+        },
+      },
+      errorElement: "span",
+      errorPlacement: function (error, element) {
+        error.addClass("invalid-feedback");
+        element.closest(".form-group").append(error);
+      },
+      highlight: function (element, errorClass, validClass) {
+        $(element).addClass("is-invalid");
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).removeClass("is-invalid");
+      },
+    });
+  });
+
   //Initialize Custom file input
   $(function () {
     bsCustomFileInput.init();
