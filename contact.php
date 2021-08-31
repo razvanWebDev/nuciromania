@@ -55,12 +55,19 @@
                     <textarea class="label-transform required-field" name="message" rows="5"></textarea>
                 </div>
             </div>
+
             <!-- <p class="terms-checkbox">
                 <input type="checkbox" name="terms_and_conditions" class="required-field">
                 I have read and accept the privacy policy and the legal notice
             </p> -->
 
             <p class="all-fields-required-message">Completeaza toate randurile obligatorii</p>
+
+            <small class="g-recaptcha-branding">This site is protected by reCAPTCHA and the Google 
+                <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+                <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+            </small>
+            
             <button type="submit" name="submit" class="submit-contact">TRIMITE</button>
         </form>
     </div>

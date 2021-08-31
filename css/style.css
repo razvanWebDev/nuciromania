@@ -193,6 +193,14 @@ section {
 .error {
   color: var(--danger-color);
 }
+
+/* Hide google recaptcha */
+.grecaptcha-badge {
+  visibility: hidden;
+}
+.g-recaptcha-branding {
+  margin-top: 1em;
+}
 /* ============preloader===================== */
 .preloader {
   position: fixed;
@@ -564,7 +572,7 @@ footer a:visited {
 
 .all-fields-required-message {
   color: var(--danger-color);
-  margin: 0;
+  margin: 1em 0 0;
   display: none;
 }
 
