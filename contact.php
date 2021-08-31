@@ -17,7 +17,7 @@
                 <div class="contact-details">
                     <p><img src="img/logos/location.svg" alt="address" class="contact-icon">Comuna Surduc, jud. Sălaj</p>
                     <p><img src="img/logos/phone.svg" alt="phone" class="contact-icon">(+4)0723 20 21 10</p>
-                    <p><a href="office@nuciromania.ro"><img src="img/logos/email.svg" alt="email"
+                    <p><a href="mailto: office@nuciromania.ro"><img src="img/logos/email.svg" alt="email"
                                 class="contact-icon">office@nuciromania.ro</a>
                     </p>
 
