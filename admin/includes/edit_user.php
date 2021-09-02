@@ -1,4 +1,11 @@
 <?php 
+// DELETE PHOTO
+if(isset($_GET['delete'])) {
+  if(isset($_SESSION['username'])){
+      $delete_id = mysqli_real_escape_string($connection, $_GET['delete']);
+      deleteFileFromRow('users', 'user_image', $delete_id, "dist/img/users/");
+  }
+}
 
 $userNameInputValue = "";
 $invalidUsernameClass = "";
