@@ -493,6 +493,9 @@ footer a:visited {
   color: var(--white-color);
   background-color: rgba(0, 0, 0, 0.6);
 }
+.advert {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 .description p {
   text-align: center;

@@ -8,6 +8,20 @@
         <a href="contact"><button>Contact</button></a>
     </div>
 </section>
+<section class="advert">
+<h2 class="section-title">ANUNȚ ACHIZIȚIE NUCĂ PRODUCȚIE 2021</h2>
+<p>Cumpărăm nucă în coajă, cantități variabile, producție 2021.</p>
+<p>
+    Cumpărăm nucă în coajă, ușor de spart, cu randament de minim 2-2.2 (un kilogram de miez să fie obținut din maxim 2.2 kilograme de nucă in coajă).
+</p>
+<p>Asigurăm transport!</p>
+<p>
+    Preț negocabil, in funcție de de cantitatea de nucă și de calitate. 
+</p>
+<p>Telefon: 0723 20 21 10</p>
+
+
+</section>
 <section class="description">
     <h2 class="section-title">Despre Noi</h2>
     <p>
